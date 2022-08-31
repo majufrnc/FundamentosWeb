@@ -4,45 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
         <li><a href="contato.html">Contato</a></li>
     </ul>
-    <h1>Entre em contato comigo!</h1>
-    <h2>Contatos:</h2>
-    <p>Instagram: <a href="https://www.instagram.com/maju.frnc/">@maju.frnc</a></p>
-    <p>Linkedin: <a href="https://www.linkedin.com/in/maju-franca/">Maju França</a></p>
-    <p>GitHub: <a href="https://github.com/majufrnc">@majufrnc</a></p>
-    <form>
-    <br>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-    <br>
-    <br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email">
-    <br>
-    <br>
-        <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-    <br>
-    <br>
-        <button>Enviar</button>
-    </form>
+    <h1 class="center">Entre em contato comigo!</h1>
+    <div class="container">
+        <div class="container-endereco pd-15">
+            <form>
+                <br>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome">
+                <br>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email">
+                <br>
+                <br>
+                <label for="assunto">Assunto:</label><br>
+                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                <br>
+                <br>
+                <button>Enviar</button>
+            </form>
+        </div>
+        <div class="container-endereco pd-15">
+        <p>Av. Nossa Sra. da Assunção, 647 - Vila Butantã, São Paulo - SP, 05359-001</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.8407080369675!2d-46.746169771213715!3d-23.570921531208647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56743130ec97%3A0xe6cbc2f973792dfa!2sAv.%20Nossa%20Sra.%20da%20Assun%C3%A7%C3%A3o%2C%20647%20-%20Vila%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005359-001!5e0!3m2!1spt-BR!2sbr!4v1661435334503!5m2!1spt-BR!2sbr"
+                width="500"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </div>
 
-    <h2>Endereço:</h2>
-    <p>Av. Nossa Sra. da Assunção, 647 - Vila Butantã, São Paulo - SP, 05359-001</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.8407080369675!2d-46.746169771213715!3d-23.570921531208647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56743130ec97%3A0xe6cbc2f973792dfa!2sAv.%20Nossa%20Sra.%20da%20Assun%C3%A7%C3%A3o%2C%20647%20-%20Vila%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005359-001!5e0!3m2!1spt-BR!2sbr!4v1661435334503!5m2!1spt-BR!2sbr" 
-    width="500" 
-    height="350" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.instagram.com/maju.frnc/" target="_blank">
+                <img class="tm-social pd-15" src="assets/imgs/instagram.png" alt="Logo do Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/maju-franca/" target="_blank">
+                <img class="tm-social pd-15" src="assets/imgs/linkedin.png" alt="Logo do Linkedin">
+            </a>
+            <a href="https://github.com/majufrnc" target="_blank">
+                <img class="tm-social pd-15" src="assets/imgs/github.png" alt="Logo do GitHub">
+            </a>
+        </div>
+
+        <p class="center">
+            <b>
+                Todos os direitos reservados a Maju França &copy.
+            </b>
+        </p>
+    </footer>
 </body>
 </html>
