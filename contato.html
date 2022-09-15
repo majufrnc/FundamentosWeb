@@ -19,18 +19,19 @@
             <form>
                 <br>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup="validarNome()">
+                <div id="txtNome"></div>
                 <br>
                 <label for="email">Email:</label><br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup="validarEmail()">
+                <div id="txtEmail"></div>
                 <br>
                 <label for="assunto">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup="validarAssunto()"></textarea>
+                <div id="txtAssunto"></div>
                 <br>
                 <br>
-                <button>Enviar</button>
+                <button onclick="enviarForms()">Enviar</button>
             </form>
         </div>
         <div class="container-endereco pd-15">
@@ -41,7 +42,10 @@
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                referrerpolicy="no-referrer-when-downgrade"
+                onmousemove="mapaZoom()"
+                onmouseout="mapaNormal()"
+                id="mapa">
         </iframe>
         </div>
     </div>
@@ -66,5 +70,7 @@
             </b>
         </p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
